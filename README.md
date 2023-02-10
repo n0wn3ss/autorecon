@@ -23,7 +23,7 @@ I didn't modify original autorecon.py, after copying that file modified 1,2 poin
 It's the best way to implement this tool      
 Build docker container with docker image that I uploaded docker image on hub or You can build docker container with Dockerfile   
 
-### 1) docker image
+### 1) Docker image
 *[] this flag means user input data(So it depends on you)
 ```sh
 docker pull pse27/autorecon:1.0
@@ -34,17 +34,35 @@ connect docker bash shell
 ```
 cd ./autorecon
 python3 md_autorecon.py --full -o xml [http://url or https://url]
-![Alt text](/path/to/img.jpg)
-![image](https://user-images.githubusercontent.com/44766776/217989104-6a7cf178-f045-4974-9578-aaffee8975b7.png)
 ```
 ![image](https://user-images.githubusercontent.com/44766776/217989104-6a7cf178-f045-4974-9578-aaffee8975b7.png)
+      
 after extracting output for converting xml to json
 ```
 cd ./output
 xml2json -t xml2json -o [filename.json] [url.xml] --pretty
-![image](https://user-images.githubusercontent.com/44766776/217988581-d5f186b0-080c-4b4c-bf48-66251e45ab6f.png)
 ```
-
+![image](https://user-images.githubusercontent.com/44766776/217988581-d5f186b0-080c-4b4c-bf48-66251e45ab6f.png)     
+     
+### 2) Dockerfile
+```
+docker image build -t [image_name] .
+docker container run -itd --name [container name] [image_name]
+docker container exec -it [container name] /bin/bash
+```
+after connecting docker bash shell, it's the same process of above(1-Docker image)
+```
+cd ./autorecon
+python3 md_autorecon.py --full -o xml [http://url or https://url]
+```
+![image](https://user-images.githubusercontent.com/44766776/217989104-6a7cf178-f045-4974-9578-aaffee8975b7.png)
+      
+after extracting output for converting xml to json
+```
+cd ./output
+xml2json -t xml2json -o [filename.json] [url.xml] --pretty
+```
+![image](https://user-images.githubusercontent.com/44766776/217988581-d5f186b0-080c-4b4c-bf48-66251e45ab6f.png)    
 
 ## autorecon module Features
 
