@@ -34,6 +34,7 @@ connect docker bash shell
 ```
 cd ./autorecon
 python3 md_autorecon.py --full -o xml [http://url or https://url]
+![Alt text](/path/to/img.jpg)
 ![image](https://user-images.githubusercontent.com/44766776/217988316-b6281aac-717d-425a-87e3-b46fd81ab557.png)
 ```
 
