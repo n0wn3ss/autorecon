@@ -21,15 +21,26 @@ I didn't modify original autorecon.py, after copying that file modified 1,2 poin
 
 ## With Docker
 It's the best way to implement this tool      
-Build docker container with docker image that i uploaded docker image on hub or You can build docker container with Dockerfile   
-1)docker image   
+Build docker container with docker image that I uploaded docker image on hub or You can build docker container with Dockerfile   
+
+# 1) docker image
+*[] this flag means user input data(So it depends on you)
 ```sh
 docker pull pse27/autorecon:1.0
 docker container run -itd --name [container name] pse27/autorecon:1.0
 docker container exec -it [container name] /bin/bash
-
-
 ```
+connect docker bash shell
+```
+cd ./autorecon
+python3 md_autorecon.py --full -o xml [http://url]
+```
+after extracting output
+```
+cd ./output
+xml2json -t xml2json -o [filename.json] [url.xml] --pretty
+```
+
 
 ## autorecon module Features
 
