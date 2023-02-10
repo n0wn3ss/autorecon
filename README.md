@@ -34,11 +34,14 @@ connect docker bash shell
 ```
 cd ./autorecon
 python3 md_autorecon.py --full -o xml [http://url or https://url]
+![image](https://user-images.githubusercontent.com/44766776/217988316-b6281aac-717d-425a-87e3-b46fd81ab557.png)
 ```
+
 after extracting output for converting xml to json
 ```
 cd ./output
 xml2json -t xml2json -o [filename.json] [url.xml] --pretty
+![image](https://user-images.githubusercontent.com/44766776/217988581-d5f186b0-080c-4b4c-bf48-66251e45ab6f.png)
 ```
 
 
