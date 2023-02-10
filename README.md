@@ -35,7 +35,7 @@ connect docker bash shell
 cd ./autorecon
 python3 md_autorecon.py --full -o xml [http://url or https://url]
 ![Alt text](/path/to/img.jpg)
-![image](https://user-images.githubusercontent.com/44766776/217988316-b6281aac-717d-425a-87e3-b46fd81ab557.png)
+![image](https://user-images.githubusercontent.com/44766776/217989104-6a7cf178-f045-4974-9578-aaffee8975b7.png)
 ```
 
 after extracting output for converting xml to json
