@@ -36,7 +36,8 @@ js_crawl_total = []
 sm_crawl_total = []
 wayback_total = []
 
-target=input("Enter target: ")
+#don't need to input data
+#target=input("Enter target: ")
 
 def crawler(target, output, data):
 	global soup, r_url, sm_url
