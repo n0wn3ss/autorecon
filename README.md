@@ -90,6 +90,18 @@ xml2json -t xml2json -o [filename.json] [url.xml] --pretty
 ![image](https://user-images.githubusercontent.com/44766776/217990531-698c73d5-a111-46e5-b89e-41710987bbbe.png)
 
 
+## choices I've made
+
+
+## trade-offs
+The volume of docker image is little bit big, 
+
+##future improvements
+
+## Demo
+
+https://drive.google.com/file/d/1iTs7MWxmzLllcm5uUfxal6SdrihOh_Hb/view?usp=sharing
+
 ## autorecon module Features
 
 - Web Crawler - A sort of bot known as a web crawler, often known as a spider, is frequently used by search popular search Engines. They provide the function of indexing website content so that such websites may be found in search results.
@@ -101,21 +113,3 @@ xml2json -t xml2json -o [filename.json] [url.xml] --pretty
 - Traceroute - Traceroute command in Linux prints the route that a packet takes to reach the host. This command is useful when you want to know about the route and about all the hops that a packet takes.
 - Directory Search - It uses Wayback machine to search past archived directories and fuzzy urls.
 - Export Result - Get txt, xml or csv file containing final results of each scan.
-
-
-## Installation
-
-
-```bash
-  git clone https://github.com/Retr0-45809/autorecon.git
-  cd autorecon
-  pip3 install -r requirements.txt
-  python3 autorecon.py --full -o <export file type> <url>
-```
-    
-
-
-## Demo
-
-https://drive.google.com/file/d/1iTs7MWxmzLllcm5uUfxal6SdrihOh_Hb/view?usp=sharing
-
