@@ -99,10 +99,11 @@ Security incidents often occur when users connect to external links as well as t
 Sometimes it is also important to know what external links are.   
 
 ### 2) Ubuntu Docker
+It's because I thought that ubuntu os which can use other security tools would be good if docker is used continuously, not one-time.
 
 ## Trade-offs
 ### Good
-1) Gathering many information of domain
+1) Gathering much information of domain
 2) If using docker image, it's easy to use
 
 ### Not Good
