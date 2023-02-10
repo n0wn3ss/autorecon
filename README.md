@@ -33,9 +33,9 @@ docker container exec -it [container name] /bin/bash
 connect docker bash shell
 ```
 cd ./autorecon
-python3 md_autorecon.py --full -o xml [http://url]
+python3 md_autorecon.py --full -o xml [http://url or https://url]
 ```
-after extracting output
+after extracting output for converting xml to json
 ```
 cd ./output
 xml2json -t xml2json -o [filename.json] [url.xml] --pretty
