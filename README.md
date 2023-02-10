@@ -19,6 +19,10 @@ For creating an intelligence report in a json format, used xml2json
 If you want to deploy the traceout module, you can use autorecon.py file   
 I didn't modify original autorecon.py, after copying that file modified 1,2 points renamed the file md_autorecon.py   
 
+## Demo
+
+[https://drive.google.com/file/d/1iTs7MWxmzLllcm5uUfxal6SdrihOh_Hb/view?usp=sharing](https://drive.google.com/file/d/1EGNqZ7BiakzEdNv2sU4hZYvqp90fnUMM/view?usp=share_link)
+
 ## With Docker
 It's the best way to implement this tool      
 Build docker container with docker image that I uploaded docker image on hub or You can build docker container with Dockerfile   
@@ -122,10 +126,6 @@ The final goal is to provide a report in html format with the extracted json dat
 ## How to Censys API provided the script
 The data is obtained by continuously scanning the Internet and collecting information from various sources, including network traffic, public data sources, and other data feeds.
 Overall, Censys provides a comprehensive view of the information about devices and services, their configurations.
-
-## Demo
-
-[https://drive.google.com/file/d/1iTs7MWxmzLllcm5uUfxal6SdrihOh_Hb/view?usp=sharing](https://drive.google.com/file/d/1EGNqZ7BiakzEdNv2sU4hZYvqp90fnUMM/view?usp=share_link)
 
 ## autorecon module Features
 
