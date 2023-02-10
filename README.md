@@ -108,12 +108,15 @@ It's because I thought that ubuntu os which can use other security tools would b
 
 ### Not Good
 1) Big volume of docker image
-2) Absence of reputation inquiry
+2) Absence of reputation of domain
+It doesn't have reputation of domain like Virustotal provided
 
 ## Future improvements
-1) lightweighting of docker image
+1) Lightweighting of docker image
 2) Cumtomizing of autorecon module
-3) Output of Html format   
+3) Output of Html format
+Report in html format is easy to read, so it is convenient for users.
+The final goal is to provide a report in html format with the extracted json data.   
 
 ## How to Censys API provided the script
 1) gathering from many website
