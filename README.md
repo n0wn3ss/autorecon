@@ -112,15 +112,16 @@ It's because I thought that ubuntu os which can use other security tools would b
 It doesn't have reputation of domain like Virustotal provided
 
 ## Future improvements
-1) Lightweighting of docker image
-2) Cumtomizing of autorecon module
-3) Output of Html format
+### 1) Lightweighting of docker image
+### 2) Cumtomizing of autorecon module
+If some users want to add more data like reputation/history of domain, it can be customized the autorecon module. 
+### 3) Output of Html format   
 Report in html format is easy to read, so it is convenient for users.
 The final goal is to provide a report in html format with the extracted json data.   
 
 ## How to Censys API provided the script
-1) gathering from many website
-2)
+The data is obtained by continuously scanning the Internet and collecting information from various sources, including network traffic, public data sources, and other data feeds.
+Overall, Censys provides a comprehensive view of the information about devices and services, their configurations.
 
 ## Demo
 
