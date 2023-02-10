@@ -42,7 +42,7 @@ after extracting output for converting xml to json
 cd ./output
 xml2json -t xml2json -o [filename.json] [url.xml] --pretty
 ```
-![image](https://user-images.githubusercontent.com/44766776/217988581-d5f186b0-080c-4b4c-bf48-66251e45ab6f.png)     
+![image](https://user-images.githubusercontent.com/44766776/217990498-be3b508b-d695-4905-9a94-fea5a5f7d285.png)
      
 ### 2) Dockerfile
 ```
@@ -62,7 +62,7 @@ after extracting output for converting xml to json
 cd ./output
 xml2json -t xml2json -o [filename.json] [url.xml] --pretty
 ```
-![image](https://user-images.githubusercontent.com/44766776/217988581-d5f186b0-080c-4b4c-bf48-66251e45ab6f.png)    
+![image](https://user-images.githubusercontent.com/44766776/217990531-698c73d5-a111-46e5-b89e-41710987bbbe.png)
 
 ## autorecon module Features
 
