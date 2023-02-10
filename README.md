@@ -91,25 +91,28 @@ xml2json -t xml2json -o [filename.json] [url.xml] --pretty
 
 
 ## Choices I've made
-1) autorecon   
-After searching information from Censys, I  
-2) xml2json
-3) Ubuntu Docker
+### 1) autorecon   
+After searching information from Censys, I thought Why they didn't provide domain's external links and site maps.
+So I was looking for the tools provide other information of domain(ex: links inside site, external links, etc)
+At that time I found autorecon, it provide what I looked for.
+Security incidents often occur when users connect to external links as well as the main page URL.
+Sometimes it is also important to know what external links are.   
+
+### 2) Ubuntu Docker
 
 ## Trade-offs
-
-###Good
+### Good
 1) Gathering many information of domain
 2) If using docker image, it's easy to use
 
-###Not Good
+### Not Good
 1) Big volume of docker image
-2)
+2) Absence of reputation inquiry
 
 ## Future improvements
 1) lightweighting of docker image
 2) Cumtomizing of autorecon module
-3) local volume mount 
+3) Output of Html format   
 
 ## How to Censys API provided the script
 1) gathering from many website
