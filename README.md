@@ -5,28 +5,26 @@ I think it's really good open source for finding out domain's information
 
 ## About xml2json
 Python script converts XML to JSON or the other way around   
-I used this module to convernt xml to JSON
+I used [xml2json](https://github.com/hay/xml2json) to convernt xml to JSON
 
-## Chanllenge Purpose
+## Challenge Purpose
 Create an intelligence report when provided with a domain name   
 For gathering domain's information, used autorecon       
 For creating an intelligence report in a json format, used xml2json
 
-## Modified points
+## Modified points from autorecon
 1) except traceout module(because it takes a long time)
 2) modified output path(I want to change output path under /autorecon/output)
 3) crawler.py - 'enter target' comment out(Even without it, the result is the same)
 If you want to deploy the traceout module, you can use autorecon.py file
 I didn't modify original autorecon.py, after copying that file modified 1,2 points renamed the file md_autorecon.py
-4) convert result data - xml to json with using [xml2json](https://github.com/hay/xml2json)
 
-## autorecon with Docker
-It's the best way to deploy this tool
-I uploaded docker image on my hub
-Pull the latest tagged [subfinder](https://hub.docker.com/r/projectdiscovery/subfinder) docker image:
-
+## With Docker
+It's the best way to implement this tool   
+Build docker container with docker image that i uploaded docker image on hub or You can build docker container with Dockerfile
+1)pull the docker image
 ```sh
-docker pull projectdiscovery/subfinder:latest
+docker pull pse27/autorecon:1.0
 ```
 
 ## autorecon module Features
