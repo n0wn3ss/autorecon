@@ -1,8 +1,19 @@
 
 ![logo](https://user-images.githubusercontent.com/61228111/178097170-8c7a5646-efb9-4836-8e4a-6a5bd7c4ca74.png)
 
-
 An automation tool to perform multiple reconnaisance attacks on a domain instantly
+I modified a little bit from https://github.com/Retr0-45809/autorecon.git
+I think it's really good tool for finding out domain's information
+
+Modified points
+1) except traceout module(because it takes a long time)
+2) modified output path(I want to change output path under /autorecon/output)
+3) crawler.py - 'enter target' comment out(Even without it, the result is the same)
+
+>Installation
+If you use docker, it's the best way to deploy this tool
+I uploaded docker image on my hub
+
 ## Features
 
 - Web Crawler - A sort of bot known as a web crawler, often known as a spider, is frequently used by search popular search Engines. They provide the function of indexing website content so that such websites may be found in search results.
