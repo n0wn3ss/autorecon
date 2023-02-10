@@ -90,14 +90,30 @@ xml2json -t xml2json -o [filename.json] [url.xml] --pretty
 ![image](https://user-images.githubusercontent.com/44766776/217990531-698c73d5-a111-46e5-b89e-41710987bbbe.png)
 
 
-## choices I've made
+## Choices I've made
+1) autorecon   
+After searching information from Censys, I  
+2) xml2json
+3) Ubuntu Docker
 
+## Trade-offs
 
+###Good
+1) Gathering many information of domain
+2) If using docker image, it's easy to use
 
-## trade-offs
-The volume of docker image is little bit big, 
+###Not Good
+1) Big volume of docker image
+2)
 
-##future improvements
+## Future improvements
+1) lightweighting of docker image
+2) Cumtomizing of autorecon module
+3) local volume mount 
+
+## How to Censys API provided the script
+1) gathering from many website
+2)
 
 ## Demo
 
