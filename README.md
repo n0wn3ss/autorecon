@@ -15,16 +15,20 @@ For creating an intelligence report in a json format, used xml2json
 ## Modified points from autorecon
 1) except traceout module(because it takes a long time)
 2) modified output path(I want to change output path under /autorecon/output)
-3) crawler.py - 'enter target' comment out(Even without it, the result is the same)
-If you want to deploy the traceout module, you can use autorecon.py file
-I didn't modify original autorecon.py, after copying that file modified 1,2 points renamed the file md_autorecon.py
+3) crawler.py - 'enter target' comment out(Even without it, the result is the same)   
+If you want to deploy the traceout module, you can use autorecon.py file   
+I didn't modify original autorecon.py, after copying that file modified 1,2 points renamed the file md_autorecon.py   
 
 ## With Docker
-It's the best way to implement this tool   
-Build docker container with docker image that i uploaded docker image on hub or You can build docker container with Dockerfile
-1)pull the docker image
+It's the best way to implement this tool      
+Build docker container with docker image that i uploaded docker image on hub or You can build docker container with Dockerfile   
+1)docker image   
 ```sh
 docker pull pse27/autorecon:1.0
+docker container run -itd --name [container name] pse27/autorecon:1.0
+docker container exec -it [container name] /bin/bash
+
+
 ```
 
 ## autorecon module Features
