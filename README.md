@@ -37,7 +37,7 @@ python3 md_autorecon.py --full -o xml [http://url or https://url]
 ```
 ![image](https://user-images.githubusercontent.com/44766776/217990158-5f82c812-8df2-4da2-86ff-3365b6255d45.png)
       
-after extracting output for converting xml to json
+after extracting output, converting xml to json
 ```
 cd ./output
 xml2json -t xml2json -o [filename.json] [url.xml] --pretty
@@ -57,12 +57,38 @@ python3 md_autorecon.py --full -o xml [http://url or https://url]
 ```
 ![image](https://user-images.githubusercontent.com/44766776/217990172-60f8e8dc-8504-4f0e-9778-3cd249c110ca.png)
       
-after extracting output for converting xml to json
+after extracting output, converting xml to json
 ```
 cd ./output
 xml2json -t xml2json -o [filename.json] [url.xml] --pretty
 ```
 ![image](https://user-images.githubusercontent.com/44766776/217990531-698c73d5-a111-46e5-b89e-41710987bbbe.png)
+
+## Ubuntu
+install packages and git clone
+```
+apt-get update -y 
+apt-get install git -y 
+apt-get install python3 -y 
+apt install python3-pip -y 
+pip install https://github.com/hay/xml2json/zipball/master
+git clone https://github.com/n0wn3ss/autorecon.git
+cd autorecon
+pip3 install -r requirements.txt
+```
+after installing all packages, you should follow up below process
+```
+python3 md_autorecon.py --full -o xml [http://url or https://url]
+```
+![image](https://user-images.githubusercontent.com/44766776/217990172-60f8e8dc-8504-4f0e-9778-3cd249c110ca.png)
+      
+after extracting output, converting xml to json
+```
+cd ./output
+xml2json -t xml2json -o [filename.json] [url.xml] --pretty
+```
+![image](https://user-images.githubusercontent.com/44766776/217990531-698c73d5-a111-46e5-b89e-41710987bbbe.png)
+
 
 ## autorecon module Features
 
