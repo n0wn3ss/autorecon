@@ -1,20 +1,25 @@
 
 ![logo](https://user-images.githubusercontent.com/61228111/178097170-8c7a5646-efb9-4836-8e4a-6a5bd7c4ca74.png)
 
+## About autorecon
 An automation tool to perform multiple reconnaisance attacks on a domain instantly
 
+I modified a little bit from [autorecon](https://github.com/Retr0-45809/autorecon.git)
 
-I modified a little bit from https://github.com/Retr0-45809/autorecon.git
+I think it's really good open source for finding out domain's information
 
-
-I think it's really good tool for finding out domain's information
-
-Modified points
+## Modified points
 1) except traceout module(because it takes a long time)
 2) modified output path(I want to change output path under /autorecon/output)
 3) crawler.py - 'enter target' comment out(Even without it, the result is the same)
+If you want to deploy the traceout module, you can use autorecon.py file
+I didn't modify original autorecon.py, after copying that file modified 1,2 points renamed the file md_autorecon.py
 
->Installation
+## Installation(If you use docker)
+
+```
+git clone https://github.com/aboul3la/Sublist3r.git
+```
 If you use docker, it's the best way to deploy this tool
 I uploaded docker image on my hub
 
