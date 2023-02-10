@@ -1,10 +1,16 @@
-
-![logo](https://user-images.githubusercontent.com/61228111/178097170-8c7a5646-efb9-4836-8e4a-6a5bd7c4ca74.png)
-
 ## About autorecon
 An automation tool to perform multiple reconnaisance attacks on a domain instantly   
 I modified a little bit from [autorecon](https://github.com/Retr0-45809/autorecon.git)   
-I think it's really good open source for finding out domain's information    
+I think it's really good open source for finding out domain's information
+
+## About xml2json
+Python script converts XML to JSON or the other way around   
+I used this module to convernt xml to JSON
+
+## Chanllenge Purpose
+Create an intelligence report when provided with a domain name   
+For gathering domain's information, used autorecon       
+For creating an intelligence report in a json format, used xml2json
 
 ## Modified points
 1) except traceout module(because it takes a long time)
@@ -12,16 +18,18 @@ I think it's really good open source for finding out domain's information
 3) crawler.py - 'enter target' comment out(Even without it, the result is the same)
 If you want to deploy the traceout module, you can use autorecon.py file
 I didn't modify original autorecon.py, after copying that file modified 1,2 points renamed the file md_autorecon.py
+4) convert result data - xml to json with using [xml2json](https://github.com/hay/xml2json)
 
-## Installation(If you use docker)
-
-```
-git clone https://github.com/aboul3la/Sublist3r.git
-```
-If you use docker, it's the best way to deploy this tool
+## autorecon with Docker
+It's the best way to deploy this tool
 I uploaded docker image on my hub
+Pull the latest tagged [subfinder](https://hub.docker.com/r/projectdiscovery/subfinder) docker image:
 
-## Features
+```sh
+docker pull projectdiscovery/subfinder:latest
+```
+
+## autorecon module Features
 
 - Web Crawler - A sort of bot known as a web crawler, often known as a spider, is frequently used by search popular search Engines. They provide the function of indexing website content so that such websites may be found in search results.
 - Subdomain Enumeration - Sub-domain enumeration is the process of finding sub-domains for one or more domains. It helps to broader the attack surface, find hidden applications, and forgotten subdomains.
@@ -32,8 +40,9 @@ I uploaded docker image on my hub
 - Traceroute - Traceroute command in Linux prints the route that a packet takes to reach the host. This command is useful when you want to know about the route and about all the hops that a packet takes.
 - Directory Search - It uses Wayback machine to search past archived directories and fuzzy urls.
 - Export Result - Get txt, xml or csv file containing final results of each scan.
-## Installation
 
+
+## Installation
 
 
 ```bash
