@@ -35,7 +35,7 @@ connect docker bash shell
 cd ./autorecon
 python3 md_autorecon.py --full -o xml [http://url or https://url]
 ```
-![image](https://user-images.githubusercontent.com/44766776/217989104-6a7cf178-f045-4974-9578-aaffee8975b7.png)
+![image](https://user-images.githubusercontent.com/44766776/217990158-5f82c812-8df2-4da2-86ff-3365b6255d45.png)
       
 after extracting output for converting xml to json
 ```
@@ -55,7 +55,7 @@ after connecting docker bash shell, it's the same process of above(1-Docker imag
 cd ./autorecon
 python3 md_autorecon.py --full -o xml [http://url or https://url]
 ```
-![image](https://user-images.githubusercontent.com/44766776/217989104-6a7cf178-f045-4974-9578-aaffee8975b7.png)
+![image](https://user-images.githubusercontent.com/44766776/217990172-60f8e8dc-8504-4f0e-9778-3cd249c110ca.png)
       
 after extracting output for converting xml to json
 ```
